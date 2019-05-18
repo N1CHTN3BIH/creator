@@ -11,7 +11,7 @@ $(document).ready(function(){
 		var alertValue = $('input.value').val();
 		var direction = $('input.direction').val();
 
-		var url = 'file:///C:/CodeRepository/creator/creatorcode/alertbox.html?' + '&' + headlineCustom + '&' + overlayCustom + '&' + epicname + '&' + buttonCustom + '&' + alertValue + '&' + direction;
+		var url = 'https://n1chtn3bih.github.io/creator/alertbox.html?' + '&' + headlineCustom + '&' + overlayCustom + '&' + epicname + '&' + buttonCustom + '&' + alertValue + '&' + direction;
 
 		window.location.href = url;
 
