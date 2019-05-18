@@ -1,0 +1,65 @@
+/* The typing effect */
+@keyframes typing {
+	from { width: 0 }
+	to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+	from, to { border-color: transparent }
+	50% { border-color: orange; }
+}
+
+@keyframes colorchange
+{
+	0%   {background: #205a9d;}
+	25%  {background: #205a9d;}
+	50%  {background: #205a9d;}
+	75%  {background: green;}
+	100% {background: green;}
+}
+
+@keyframes zoom {
+	0% {
+		transform: scale(0);
+	}
+	10% {
+		transform: scale(1.0);
+	}
+	20% {
+		transform: scale(1.0);
+	}
+	30% {
+		transform: scale(1.0);
+	}
+	40% {
+		transform: scale(1.0);
+	}
+	50% {
+		transform: scale(1.0);
+	}
+	60% {
+		transform: scale(1.0);
+	}
+	70% {
+		transform: scale(1.0);
+	}
+	80% {
+		transform: scale(1.0);
+	}
+	90% {
+		transform: scale(1.0);
+	}
+	100% {
+		transform: scale(0);
+	}
+}
+
+@keyframes zoomButton {
+	0% {
+		transform: scale(1.0);
+	}
+	50% {
+		transform: scale(1.2);
+	}
+}
