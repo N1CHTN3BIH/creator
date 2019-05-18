@@ -5,6 +5,8 @@ Creator Code Alert for Streamlabs OBS / OBS
 Fill in the stuff for a quick test:
 https://n1chtn3bih.github.io/creator/
 
+Please fill all the input fields. The delay value is in ms, so please make sure to enter the right one! I would suggest 5 minutes (300000)!
+
 
 # Positioning of the alert box:
 Choose of following classes: 
