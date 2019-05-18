@@ -1,7 +1,7 @@
 # creator
 Creator Code Alert for Streamlabs OBS / OBS
 
-#Demo
+# Demo
 Fill in the stuff for a quick test:
 https://n1chtn3bih.github.io/creator/
 
