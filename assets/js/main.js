@@ -3,6 +3,14 @@
 $(document).ready(function(){
 
 
+	//DEMO page github
+	var headlineCustom = $('input.headlineCustom').val();
+	var overlayCustom = $('input.overlayCustom').val();
+	var epicname = $('input.epicnameCustom').val();
+	var buttonCustom = $('input.buttonCustom').val();
+
+
+
 	var headline = $('.support h1');
 	var overlay = $('.overlay');
 	var epicname = $('.typewriter h1');
@@ -25,5 +33,10 @@ $(document).ready(function(){
 
 	setTimeout(function(){
 		location.reload();
-	}, window.timeValue)
+	}, window.timeValue);
+
+
+
+
+
 });
