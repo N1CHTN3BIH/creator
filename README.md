@@ -16,3 +16,7 @@ top-right
 bottom-left
 bottom-right
 
+# Streamlabs OBS / OBS integration
+
+Go to your Scene —> Sources —> click the „+“ —> add Browser Source —> Name the Source, create it: Set the Width to 1920 and the height to 1080. Insert the generated link in your browser into the URL field. Enjoy!
+
