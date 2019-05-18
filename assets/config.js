@@ -2,7 +2,7 @@
 
 // Replace the values here to customize your Creator Code alert.
 
-window.timeValue = 30000; //30000 = 30 seconds. 300000 = 5 minutes - 1 minute = 60000(ms)
+window.timeValue = 300000; //30000 = 30 seconds. 300000 = 5 minutes - 1 minute = 60000(ms)
 window.headline = "Creator Code";
 window.epicName = "YOUR_NAME";
 window.button = "Accept";

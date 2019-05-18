@@ -2,15 +2,6 @@
 
 $(document).ready(function(){
 
-
-	//DEMO page github
-	var headlineCustom = $('input.headlineCustom').val();
-	var overlayCustom = $('input.overlayCustom').val();
-	var epicname = $('input.epicnameCustom').val();
-	var buttonCustom = $('input.buttonCustom').val();
-
-
-
 	var headline = $('.support h1');
 	var overlay = $('.overlay');
 	var epicname = $('.typewriter h1');
@@ -25,15 +16,19 @@ $(document).ready(function(){
 	});
 	fitty('.overlay');
 
-	body.addClass(window.alertPosition);
-	headline.html(window.headline);
-	overlay.html(window.thankYou);
-	epicname.html(window.epicName);
-	button.html(window.button);
+	var data = window.location.href;
+
+	var url = data.split('&');
+
+	body.addClass(decodeURIComponent(url[6]));
+	headline.html(decodeURIComponent(url[1]));
+	overlay.html(decodeURIComponent(url[2]));
+	epicname.html(decodeURIComponent(url[3]));
+	button.html(decodeURIComponent(url[4]));
 
 	setTimeout(function(){
 		location.reload();
-	}, window.timeValue);
+	}, decodeURIComponent(url[5]));
 
 
 
