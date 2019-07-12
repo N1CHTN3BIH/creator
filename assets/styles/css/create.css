@@ -1,0 +1,44 @@
+@keyframes backgroundGradientAnimation {
+  0% {
+    background-position: 0 50%; }
+  50% {
+    background-position: 100% 50%; }
+  to {
+    background-position: 0 50%; } }
+
+@keyframes moveElement {
+  0% {
+    transform: translateX(-100vw) scale(5) skewX(30deg); }
+  100% {
+    transform: translateX(0) scale(1) skewX(0); } }
+
+@keyframes height {
+  0% {
+    height: 0; }
+  100% {
+    height: 100px; } }
+
+html {
+  height: 100%;
+  width: 100%; }
+  html body {
+    transition: all .5s;
+    flex-direction: column;
+    color: white;
+    display: flex;
+    flex: 1;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background: #00477f;
+    background: linear-gradient(270deg, #00477f, #dc06a4, #acf300);
+    background-size: 600% 600%;
+    animation: backgroundGradientAnimation 20s ease infinite; }
+    html body .lineheight {
+      overflow: hidden;
+      height: 100px;
+      animation: height 7s ease; }
+    html body .ketsuya {
+      padding: 50px;
+      background: #5a1c4263;
+      animation: moveElement 1s ease; }

@@ -1,0 +1,68 @@
+
+@keyframes backgroundGradientAnimation {
+	0% {
+		background-position: 0 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	to {
+		background-position:0 50%;
+	}
+}
+
+
+@keyframes moveElement {
+	0%{
+	    transform: translateX(-100vw) scale(5) skewX(30deg);
+	}
+	100% {
+		transform: translateX(0) scale(1) skewX(0);
+	}
+}
+
+@keyframes height {
+	0%{
+	    height: 0;
+	}
+	100% {
+		height: 100px;
+	}
+}
+
+
+$blue-one:        #00477f;
+$blue-two:        #dc06a4;
+$blue-three:      #acf300;
+
+html{
+	height: 100%;
+	width: 100%;
+
+	body{
+		transition: all .5s;
+		.lineheight{
+			overflow: hidden;
+			height: 100px;
+			animation: height 7s ease;
+		}
+		flex-direction: column;
+		color: white;
+		display: flex;
+		flex: 1;
+		height: 100%;
+		justify-content: center;
+		align-items: center;
+		background: $blue-one;
+		background:linear-gradient(270deg, $blue-one, $blue-two, $blue-three);
+		background-size:600% 600%;
+		animation: backgroundGradientAnimation 20s ease infinite;
+		.ketsuya{
+			padding: 50px;
+			background: #5a1c4263;
+			animation: moveElement 1s ease;
+		}
+
+	}
+
+}

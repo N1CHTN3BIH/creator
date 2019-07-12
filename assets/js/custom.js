@@ -8,10 +8,10 @@ $(document).ready(function(){
 		var overlayCustom = $('input.overlayCustom').val();
 		var epicname = $('input.epicnameCustom').val();
 		var buttonCustom = $('input.buttonCustom').val();
-		var alertValue = $('input.value').val();
-		var direction = $('input.direction').val();
+		var alertValue = $('input.value').val() * 60000;
+		var direction = $( ".direction option:selected" ).text();
 
-		var url = 'https://n1chtn3bih.github.io/creator/alertbox.html?' + '&' + headlineCustom + '&' + overlayCustom + '&' + epicname + '&' + buttonCustom + '&' + alertValue + '&' + direction;
+		var url = 'file:///D:/CodeRepository/private/creator/alertbox.html?' + '&' + headlineCustom + '&' + overlayCustom + '&' + epicname + '&' + buttonCustom + '&' + alertValue + '&' + direction;
 
 		window.location.href = url;
 

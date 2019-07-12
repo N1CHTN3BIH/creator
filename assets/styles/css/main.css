@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css?family=Luckiest+Guy");
+html, body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: 0;
+  font-family: 'Luckiest Guy', cursive; }
+
+input {
+  border: none !important; }
+
+.overlay {
+  display: flex !important; }
+
+.typewriter h1::before {
+  position: absolute;
+  content: "";
+  right: -10px;
+  width: 10px;
+  height: 56px;
+  background: white; }
+
+.typewriter h1::after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 56px;
+  left: -10px;
+  background: white; }
+
+body {
+  padding: 30px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.typewriter h1 {
+  display: block !important; }
+
+.ccinput {
+  animation: zoom 8s forwards;
+  width: 100%;
+  position: relative;
+  max-width: 350px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px; }
+
+textarea:focus, input:focus {
+  outline: none; }
+
+.ccinput input {
+  width: 100%;
+  padding: 10px;
+  font-size: 30px;
+  position: relative;
+  box-sizing: border-box;
+  font-family: 'Luckiest Guy', cursive;
+  font-weight: 400;
+  text-transform: uppercase; }
+
+.support {
+  background: #0b224a;
+  width: 100%; }
+  .support h1 {
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 30px;
+    color: white;
+    text-transform: uppercase; }
+
+.wrap {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  background: -moz-linear-gradient(45deg, #2b4f87 0%, #3968b3 100%);
+  /* ff3.6+ */
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #2b4f87), color-stop(100%, #3968b3));
+  /* safari4+,chrome */
+  background: -webkit-linear-gradient(45deg, #2b4f87 0%, #3968b3 100%);
+  /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(45deg, #2b4f87 0%, #3968b3 100%);
+  /* opera 11.10+ */
+  background: -ms-linear-gradient(45deg, #2b4f87 0%, #3968b3 100%);
+  /* ie10+ */
+  background: linear-gradient(45deg, #2b4f87 0%, #3968b3 100%);
+  /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3968B3', endColorstr='#2b4f87',GradientType=1 );
+  /* ie6-9 */ }
+
+.button {
+  padding: 20px 20px 0 20px;
+  text-align: right; }
+  .button button {
+    border: 3px solid #5c91cf;
+    background: #205a9d;
+    color: white;
+    padding: 0 20px 0 20px;
+    font-size: 20px;
+    font-family: 'Luckiest Guy', cursive;
+    animation: colorchange 5s forwards, zoomButton 6s forwards;
+    /* animation-name followed by duration in seconds*/ }
+
+.typewriter {
+  position: absolute;
+  top: 0;
+  top: 20px;
+  width: 310px; }
+
+input {
+  border: none; }
+
+.typewriter h1 {
+  line-height: 58px;
+  height: 58px;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  animation: typing 2.5s steps(40, end), blink-caret 0.75s step-end infinite; }
+
+.overlay {
+  transform: scale(0);
+  animation: zoom 5s forwards;
+  animation-delay: 6s;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #295087;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  color: white; }
+
+.center {
+  align-items: center;
+  margin: 0 !important; }
+
+.center-right {
+  align-items: flex-end; }
+
+.center-left {
+  align-items: flex-start; }
+
+.bottom-left {
+  justify-content: flex-end;
+  align-items: flex-start; }
+
+.bottom-right {
+  justify-content: flex-end;
+  align-items: flex-end; }
+
+.top-left {
+  justify-content: flex-start;
+  align-items: flex-start; }
+
+.top-right {
+  justify-content: flex-start;
+  align-items: flex-end; }

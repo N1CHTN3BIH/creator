@@ -1,16 +1,50 @@
+
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Customize your Alert</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/styles/css/create.css">
 </head>
 <body>
 	<script type="text/javascript" src="assets/config.js"></script>
-
-	<input class="headlineCustom" type="" name="" />
-	<input class="overlayCustom" type="" name="" />
-	<input class="epicnameCustom" type="" name="" />
-	<input class="buttonCustom" type="" name="">
-	<button class="createAlert">Create Alert</button>
+	<div class="lineheight">
+		<h1>Custom Alert by twitch.tv/nebdoe</h1>
+	</div>
+	<div class="ketsuya">
+		<div class="ketsuya__wrapper">
+			<div class="form-group">
+				<label>Hallo</label>
+				<input class="form-control headlineCustom" placeholder="Alert Headline" type="" name="" />
+			</div>
+			<div class="form-group">
+				<label>Hallo</label>
+				<input class="form-control epicnameCustom" placeholder="Your Creator Code" type="" name="" />
+			</div>
+			<div class="form-group">
+				<label>Hallo</label>
+				<input placeholder="Button Text" class="form-control buttonCustom" type="" name="" />
+			</div>
+			<div class="form-group">
+				<label>Alert restarts after the time given below</label>
+				<input placeholder="1 = 1 minute" type="number" maxlength="2" class="form-control value" type="number" name="" />
+			</div>
+			<div class="form-group">
+				<label>Thank you screen of your alert</label>
+				<input class="form-control overlayCustom" placeholder="Thank You screen" type="" name="" />
+			</div>
+			<div class="form-group">
+				<label>Position of the Alert on your stream layout</label>
+				<select class="form-control direction">
+					<option>center</option>
+					<option>center-right</option>
+					<option>top-right</option>
+					<option>top-left</option>
+				</select>
+			</div>
+			<button class="btn btn-primary mb-2 createAlert">Create Alert</button>
+		</div>
+	</div>
 
 
 	<script
