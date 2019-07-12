@@ -10,8 +10,16 @@ $(document).ready(function(){
 		var buttonCustom = $('input.buttonCustom').val();
 		var alertValue = $('input.value').val() * 60000;
 		var direction = $( ".direction option:selected" ).text();
+		var urlString = window.location.pathname;
 
-		var url = 'file:///D:/CodeRepository/private/creator/alertbox.html?' + '&' + headlineCustom + '&' + overlayCustom + '&' + epicname + '&' + buttonCustom + '&' + alertValue + '&' + direction;
+		function RemoveLastDirectoryPartOf(the_url)
+		{
+		    var the_arr = the_url.split('/');
+		    the_arr.pop();
+		    return( the_arr.join('/') );
+		}
+
+		var url = RemoveLastDirectoryPartOf(urlString) + '/alertbox.html?' + '&' + headlineCustom + '&' + overlayCustom + '&' + epicname + '&' + buttonCustom + '&' + alertValue + '&' + direction;
 
 		window.location.href = url;
 
