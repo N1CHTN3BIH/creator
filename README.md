@@ -3,7 +3,7 @@ Creator Code Alert for Streamlabs OBS / OBS
 
 # Demo
 Fill in the stuff for a quick test:
-https://n1chtn3bih.github.io/creator/
+https://n1chtn3bih.github.io/creator/custom.html
 
 If you don't trust me, do not use the custom URL from the repo, simply download the repo and open the index.html and run it local.
 
