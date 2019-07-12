@@ -14,28 +14,28 @@
 	<div class="ketsuya">
 		<div class="ketsuya__wrapper">
 			<div class="form-group">
-				<label>Hallo</label>
-				<input class="form-control headlineCustom" placeholder="Alert Headline" type="" name="" />
+				<label>Insert your Headline here</label>
+				<input class="form-control headlineCustom" placeholder="Alert Headline" type="" name="" required/>
 			</div>
 			<div class="form-group">
-				<label>Hallo</label>
-				<input class="form-control epicnameCustom" placeholder="Your Creator Code" type="" name="" />
+				<label>Insert your Creator Code here</label>
+				<input class="form-control epicnameCustom" placeholder="Your Creator Code" type="" name="" required />
 			</div>
 			<div class="form-group">
-				<label>Hallo</label>
-				<input placeholder="Button Text" class="form-control buttonCustom" type="" name="" />
+				<label>Text for the Button, under the alert</label>
+				<input placeholder="Button Text" class="form-control buttonCustom" type="" name="" required />
 			</div>
 			<div class="form-group">
-				<label>Alert restarts after the time given below</label>
-				<input placeholder="1 = 1 minute" type="number" maxlength="2" class="form-control value" type="number" name="" />
+				<label>Time between each Creator Code alert (in minutes!)</label>
+				<input placeholder="1 = 1 minute" type="number" maxlength="2" min="1" class="form-control value" type="number" name="" required />
 			</div>
 			<div class="form-group">
-				<label>Thank you screen of your alert</label>
-				<input class="form-control overlayCustom" placeholder="Thank You screen" type="" name="" />
+				<label>Thank you Text for your button</label>
+				<input class="form-control overlayCustom" placeholder="Thank You screen" type="" name="" required/>
 			</div>
 			<div class="form-group">
 				<label>Position of the Alert on your stream layout</label>
-				<select class="form-control direction">
+				<select class="form-control direction" required>
 					<option>center</option>
 					<option>center-right</option>
 					<option>top-right</option>
